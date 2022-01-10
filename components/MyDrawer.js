@@ -30,18 +30,6 @@ import Orders from "../src/pages/Visits/Orders/Orders";
 import Notes from "../src/pages/Visits/Notes/Notes";
 import Contacts from "../src/pages/Visits/Contacts/Contacts";
 const Drawer = createDrawerNavigator();
-function Component(props) {
-  return (
-    <Center>
-      <HStack>
-        <AppBar name={props.route.name} />
-      </HStack>
-      <Text mt="12" fontSize="18">
-        This is {props.route.name} page.
-      </Text>
-    </Center>
-  );
-}
 
 function CustomDrawerContent(props) {
   return (

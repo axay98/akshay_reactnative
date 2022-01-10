@@ -16,8 +16,7 @@ import {
   ScrollView,
   Text,
 } from "native-base";
-import { MaterialIcons } from "@expo/vector-icons";
-import AppBar from "./components/AppBar";
+
 import MyDrawer from "./components/MyDrawer";
 import { NavigationContainer } from "@react-navigation/native";
 

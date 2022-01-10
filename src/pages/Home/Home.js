@@ -15,11 +15,11 @@ import News from "./News";
 import Performance from "./Performance";
 import Visits from "./Visits";
 
-const Home = () => {
+const Home = ({ navigation }) => {
   return (
     <Box bg="rgba(135,152,173, 0.1)">
       <HStack>
-        <AppBar name="Home" />
+        <AppBar navigation={navigation} name="Home" />
       </HStack>
       <HStack>
         <ScrollView>

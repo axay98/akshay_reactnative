@@ -38,7 +38,7 @@ const renderScene = SceneMap({
   fifth: FifthRoute,
 });
 
-export default function TabBar() {
+export default function TabBar({ navigation }) {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
     { key: "first", title: "Orders" },
@@ -88,7 +88,7 @@ export default function TabBar() {
   return (
     <NativeBaseProvider>
       <HStack>
-        <AppBar name="Visits" />
+        <AppBar navigation={navigation} name="Visits" />
       </HStack>
       <Visits />
       <TabView
